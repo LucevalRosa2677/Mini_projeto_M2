@@ -1,0 +1,32 @@
+# Imagens e dumps do dataset (pesados) — mantém só a estrutura de pastas
+casting_data/**/*.jpeg
+casting_data/**/*.jpg
+casting_data/**/*.png
+casting_data/**/*.bmp
+*.zip
+casting_product_image_data*.zip
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Modelos e artefatos de treino
+*.h5
+*.keras
+saved_model/
+logs/
+runs/
+
+# SO / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Snapshots temporários do script de histórico
+.history_build/
