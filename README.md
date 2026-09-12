@@ -13,7 +13,6 @@ Mini_projeto_M2/
 │   └── ok_front/           # peças aprovadas
 ├── inspecao_visual_fundicao.ipynb
 ├── requirements.txt
-├── setup_git_history.sh    # recria histórico de commits por sprint
 └── README.md
 ```
 
@@ -71,15 +70,6 @@ Se `casting_data/` já existir com as duas pastas, o notebook **não** baixa de 
 - **`prefetch(AUTOTUNE)`**: sobrepõe I/O e treino; sem isso a GPU/CPU fica ociosa esperando JPEG.  
 - **Dropout 0.5** antes da saída densa: o `Flatten` explode parâmetros num dataset ~1k imagens.  
 - **sigmoid + `binary_crossentropy`**: duas classes mutuamente exclusivas em uma saída.
-
-## Reproduzir o histórico Git (sprints)
-
-O script `setup_git_history.sh` reescreve o histórico local com commits Conventional Commits e datas espaçadas (rotina de 2–3 dias). Use apenas se quiser esse histórico simulado:
-
-```bash
-# Git Bash / WSL / Linux / macOS
-bash setup_git_history.sh
-```
 
 ## Como avaliar o resultado
 
